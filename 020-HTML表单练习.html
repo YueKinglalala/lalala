@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单练习</title>
+</head>
+<body background="p3.jpg">
+    <h1>用户注册</h1>
+    <form action="http://www.baidu.com/jd/save" method="get">
+        <div >
+           <div>
+               用户名
+            <input type="text" maxlength="10" name="username"/>
+           </div>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;提示：不可以使用非法符号
+        </div>
+        <div>
+            密码&nbsp;
+            <input type="password" maxlength="10" name="userpwd"/><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;提示：密码长度不超过10，且必须以字母开头
+        </div>
+        <div>
+            确认密码
+            <input type="password" maxlength="10" /><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;提示：注意大小写
+        </div>
+        <div>
+            性别
+            <input type="radio" name="gender" value="1" checked>男
+            <input type="radio" name="gender" value="0">女
+        </div>
+        <div>
+            爱好
+            <select size="1" name="hobby" >
+                <option selected  disabled> 请选择</option>
+                <option value="1">踢足球</option>
+                <option value="2">打篮球</option>
+                <option value="3" >跳高</option>
+                <option value="4">其他</option>
+            </select>
+        </div>
+        <div>
+            上传文件
+            <input type="file">
+        </div>
+        <div>
+            <input type="submit" value="注册">&nbsp;
+            <input type="reset"value="清空">
+        </div>
+        <div>
+            <a href="011-HTML表单form重点.html"><h6>已有账户？点击此处直接登录</h6></a>
+        </div>
+    </form>
+</body>
+</html>
